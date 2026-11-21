@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f7f4" />
+    <title>CampusFind — Lost & Found</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="brand" href="#home" aria-label="CampusFind home"><span class="brand-mark">c</span><span>campus<span class="brand-light">find</span></span></a>
+        <div class="campus-switch"><span class="campus-icon">⌂</span><span><small>YOUR CAMPUS</small><b>Your University</b></span><span class="chevron">⌄</span></div>
+        <div class="nav-label">WORKSPACE</div>
+        <nav class="main-nav">
+          <button class="nav-item active" data-page="home"><span class="nav-icon">◫</span> Overview</button>
+          <button class="nav-item" data-page="browse"><span class="nav-icon">⌕</span> Browse items <span class="nav-count">12</span></button>
+          <button class="nav-item" data-page="my-reports"><span class="nav-icon">▤</span> My reports</button>
+          <button class="nav-item" data-page="matches"><span class="nav-icon">⟷</span> Possible matches <span class="nav-dot"></span></button>
+          <button class="nav-item" data-page="notifications"><span class="nav-icon">♧</span> Notifications <span class="badge-count">2</span></button>
+          <button class="nav-item" data-page="messages"><span class="nav-icon">▱</span> Messages</button>
+        </nav>
+        <div class="nav-label second-label">MANAGE</div>
+        <nav class="main-nav">
+          <button class="nav-item" data-page="claims"><span class="nav-icon">♧</span> Claims</button>
+          <button class="nav-item" data-page="admin"><span class="nav-icon">▦</span> Admin dashboard</button>
+          <button class="nav-item" data-page="report-management"><span class="nav-icon">▤</span> Report management</button>
+          <button class="nav-item" data-page="users"><span class="nav-icon">♙</span> User management</button>
+          <button class="nav-item" data-page="activity"><span class="nav-icon">◷</span> Activity log</button>
+        </nav>
+        <div class="sidebar-bottom"><div class="help-card"><span class="help-bubble">?</span><b>Need a hand?</b><span>Our campus team is here to help.</span><button>Contact support <span>↗</span></button></div><div class="profile"><div class="avatar">AO</div><div><b>Demo Student</b><small>Student · STU-001</small></div><button class="more">···</button></div></div>
+      </aside>
+
+      <main class="main-area">
+        <header class="topbar"><div class="breadcrumbs"><span>CampusFind</span><span>/</span><b id="crumb">Overview</b></div><div class="top-actions"><span class="today">Friday, 21 November</span><button class="icon-btn notification-top" aria-label="Notifications" data-page="notifications">♧<i></i></button><div class="mini-avatar">AO</div></div></header>
+        <section class="page-content" id="page-content"></section>
+      </main>
+    </div>
+    <nav class="mobile-nav"><button class="active" data-page="home"><span>◫</span>Home</button><button data-page="browse"><span>⌕</span>Browse</button><button data-page="matches"><span>⟷</span>Matches</button><button data-page="my-reports"><span>▤</span>Reports</button><button data-page="profile"><span>☻</span>Profile</button></nav>
+    <div class="toast" id="toast" role="status"></div>
+    <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" aria-label="Close">×</button><div id="modal-content"></div></div></div>
+    <script src="app.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,10 @@
+.env
+.env.*
+!.env.example
+node_modules/
+vendor/
+backend/uploads/*
+!backend/uploads/.gitkeep
+.DS_Store
+Thumbs.db
+
